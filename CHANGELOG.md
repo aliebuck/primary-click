@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.0 - 2026-02-05
+
+## Changed
+
+- **BREAKING** Modernized primary click detection by removing legacy `event.which` fallback.
+
+## Fixed
+
+- Preserve `this` binding in `onPrimaryClick` decorated function.
+
 ## v1.5.0 - 2020-11-20
 
 ### Added
