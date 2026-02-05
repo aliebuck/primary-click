@@ -17,7 +17,7 @@ export const isPrimaryClick = (event) =>
  * @param {Function} func
  * @return {Function}
  */
-export const onPrimaryClick =
-  (func) =>
-  (event, ...args) =>
-    isPrimaryClick(event) ? func(event, ...args) : undefined;
+export const onPrimaryClick = (func) =>
+  function (event, ...args) {
+    if (isPrimaryClick(event)) return func.call(this, event, ...args);
+  };
