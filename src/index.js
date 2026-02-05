@@ -1,6 +1,6 @@
 /**
  * Detects if only the primary button has been clicked in mouse events.
- * @param {MouseEvent} event Event-like instance.
+ * @param {MouseEvent} event
  * @return {boolean}
  */
 export const isPrimaryClick = (event) =>
