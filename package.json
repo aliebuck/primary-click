@@ -19,7 +19,7 @@
     "build": "vite build",
     "coverage": "vitest run --coverage",
     "format": "prettier --write .",
-    "prepare": "npm run build",
+    "prepare": "npm run build && husky",
     "preversion": "npm run coverage",
     "test": "vitest"
   },
@@ -41,9 +41,9 @@
   "homepage": "https://github.com/aliebuck/primary-click",
   "devDependencies": {
     "@vitest/coverage-v8": "^4.0.18",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
     "vite": "^7.3.1",
     "vitest": "^4.0.18"
   }
