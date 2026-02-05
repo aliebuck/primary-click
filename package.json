@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jacobbuck/primary-click.git"
+    "url": "git+https://github.com/aliebuck/primary-click.git"
   },
   "keywords": [
     "click",
@@ -26,12 +26,12 @@
     "event",
     "mouse"
   ],
-  "author": "Jacob Buck <buck.jacob@gmail.com>",
+  "author": "Alie Buck <830470+aliebuck@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jacobbuck/primary-click/issues"
+    "url": "https://github.com/aliebuck/primary-click/issues"
   },
-  "homepage": "https://github.com/jacobbuck/primary-click",
+  "homepage": "https://github.com/aliebuck/primary-click",
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
