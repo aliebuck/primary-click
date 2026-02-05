@@ -1,3 +1,4 @@
+import { describe, expect, test, vi } from 'vitest';
 import { isPrimaryClick, onPrimaryClick } from '../';
 
 describe('isPrimaryClick', () => {
@@ -42,29 +43,29 @@ describe('isPrimaryClick', () => {
 
 describe('onPrimaryClick', () => {
   test('calls fn if isPrimaryClick returns true', () => {
-    const spy = jest.fn();
+    const spy = vi.fn();
     onPrimaryClick(spy)({ button: 0 });
     expect(spy).toHaveBeenCalled();
   });
 
   test('doesn’t call fn if isPrimaryClick returns false', () => {
-    const spy = jest.fn();
+    const spy = vi.fn();
     onPrimaryClick(spy)({ ctrlKey: true, button: 1 });
     expect(spy).not.toHaveBeenCalled();
   });
 
   test('returns the value fn returns if called', () => {
-    const spy = jest.fn().mockReturnValue('hi');
+    const spy = vi.fn().mockReturnValue('hi');
     expect(onPrimaryClick(spy)({ button: 0 })).toBe('hi');
   });
 
   test('returns undefined if fn doesn’t get called', () => {
-    const spy = jest.fn().mockReturnValue('hi');
+    const spy = vi.fn().mockReturnValue('hi');
     expect(onPrimaryClick(spy)({ ctrlKey: true, button: 1 })).toBeUndefined();
   });
 
   test('passes down additional arguments to fn', () => {
-    const spy = jest.fn();
+    const spy = vi.fn();
     const event = { button: 0 };
     onPrimaryClick(spy)(event, 'goodbye', 420);
     expect(spy).toHaveBeenCalledWith(event, 'goodbye', 420);
