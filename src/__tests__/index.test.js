@@ -32,13 +32,6 @@ describe("isPrimaryClick", () => {
       expect(isPrimaryClick({ button: 0, buttons })).toBe(false);
     });
   });
-
-  test("uses event.which if event.button is not present", () => {
-    expect(isPrimaryClick({ which: 1 })).toBe(true);
-    [0, 2, 3].forEach((which) => {
-      expect(isPrimaryClick({ which })).toBe(false);
-    });
-  });
 });
 
 describe("onPrimaryClick", () => {
