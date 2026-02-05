@@ -14,7 +14,7 @@ isPrimaryClick(event {MouseEvent})
 
 #### Parameters
 
-- `event` is a `MouseEvent` or `Event`-like instance (i.e. `SyntheticEvent`).
+- `event` is a `MouseEvent`-like instance.
 
 #### Return value
 
